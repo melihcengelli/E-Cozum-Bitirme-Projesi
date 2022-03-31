@@ -1,0 +1,552 @@
+.App {
+  text-align: center;
+  height: 100%;
+  
+}
+
+#addworkfieldp {
+  margin: 10px;
+  margin-top: 25%;
+  color:white;
+}
+#addbox {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.boxes {
+  display: flex;
+  flex-wrap:wrap-reverse;
+  justify-content: space-around;
+  
+  
+
+
+}
+
+#workfielditems {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+
+  
+}
+
+#workfielditems:hover {
+  background: linear-gradient(90deg,rgba(0,212,255,1) 0%, rgba(9,9,121,1) 35%, rgba(2,0,36,1) 100%);
+}
+
+
+
+#addworkfielditems {
+  color: white;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+#addworkfielditemstitle {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+#addworkfielditemstitleitem {
+  margin-right: 10px;
+}
+
+#addworkfieldbox {
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+  
+}
+
+#modalinsidetext {
+  color:black;
+  background-color: white;
+  border-radius: 25px;
+}
+
+#addworkfieldboxstyle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+#cardmodalstyle {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+  overflow: scroll;
+  
+  
+}
+
+#cardmodalstyle::-webkit-scrollbar {
+  display: none;
+}
+
+#modalfooter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+}
+#modalbody {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  
+}
+#cardmodaltitleupdate {
+  float: left;
+  width: 550px;
+  background-color: aliceblue;
+  border-radius: 25px;
+}
+#cardmodaldescription {
+  width: 475px;
+  height: 100px;
+  background-color: aliceblue;
+  border-radius: 25px;
+  
+}
+#commentbox {
+  display: flex;
+  flex-direction: row;
+  background-color:darkgray;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  height:fit-content;
+  color: white;
+  border-radius: 25px;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+#commentpiece {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 20px;
+}
+
+#commentsborder {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  width:100%;
+  border:2px;
+  border-style:inset;
+  border-color: white;
+  border-radius: 25px;
+  
+}
+
+#commentitem {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#commentusername {
+  margin-left: 5px;
+  margin-right: 5px;
+  color:white;
+}
+
+#commenthr {
+  margin-left: 20px;
+  width:500px;
+}
+
+#modalcomment {
+  display: flex;
+  flex-direction: row;
+  color:white;
+  margin-left: 20px;
+  margin-bottom: 5px;
+  margin-top: 20px;
+
+}
+
+#cardmodalicons {
+  width: 30px;
+  height: 30px;
+  margin-left: 20px;
+  color: white;
+  cursor: pointer;
+  border-radius: 25px;
+}
+
+#cardmodaliconsdate {
+  width:fit-content;
+  height: 30px;
+  margin-left: 20px;
+  border-radius: 15px;
+ 
+}
+
+
+#modalinsidebutton {
+  height: 50px;
+  width:fit-content;
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+  
+  
+}
+
+.boxopa {
+  opacity: 100%;
+  transition: 500ms;
+  
+}
+
+.boxopa:hover { 
+  opacity: 100%;
+  transition: 500ms;
+
+}
+
+.container {
+  position: fixed;
+  background-image: url("./images/cloud.jpg");
+  background-size: cover;
+  overflow-y: scroll;
+  width: 100%;
+  height: 100%;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 75px;
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+  align-items: center;
+  
+}
+.footer {
+  display: flex;
+  bottom: 0px;
+  flex-direction: row;
+  width: 100%;
+  height: 75px;
+  background-color: rgba(21, 101, 192, 0.75);
+  align-items: center;
+}
+
+
+#userinfoavatar {
+  float: left;
+  margin-left: 5px;
+}
+#userinfoavatar2 {
+  color: white;
+  margin-left: 5px;
+}
+
+hr {
+  color:white;
+  width: 100%;
+}
+
+#toworkfieldbutton {
+  text-decoration: none;
+}
+
+.listscontainer {
+  margin-top: 20px;
+  height: auto;
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-around;  
+  
+
+}
+
+#listbox {
+  display: flex;
+  height: fit-content;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+  width: 250px;
+  border-radius: 20px;
+  color: white;
+  box-shadow: 5px 5px 2px 1px rgba(84, 84, 85, 0.2);
+}
+
+
+
+#listitem {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 200px;
+  border-radius: 25px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#listitem:hover {
+  background-color: rgba(10, 109, 202, 0.3);
+  color: black;
+  cursor: pointer;
+  
+}
+
+#innertext {
+  color: white;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  
+ 
+}
+
+#innertextduedate {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: aqua;
+  border-radius: 50px;
+  
+}
+#duedatetext {
+  margin-left: 5px;
+}
+
+
+.addnewlist {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+}
+
+#addnewlistbox {
+  display: flex;
+  height: fit-content;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+  width: 250px;
+  border-radius: 20px;
+  color: white;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+#userinfos {
+  height:fit-content;
+  float:left
+}
+
+#coveravatar {
+  display: flex;
+  height: 100%;
+  width: fit-content;
+}
+
+
+#leftheader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 25%;
+}
+#midheader {
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#rightheader {
+  
+
+  width: 25%;
+  
+}
+#usernameinfo {
+  color: white;
+  float: left;
+  margin-left: 10px;
+  
+}
+
+#boardname {
+  justify-content:center ;
+  text-align: center;
+  align-items: center;
+  color: white;
+  cursor: pointer;
+}
+
+#handleChangeBoardNameButton {
+  height: 100%;
+}
+
+textarea {
+  border-radius: 25px;
+  background-color: rgba(231, 235, 240, 0.30);
+  
+}
+
+
+#boxmodal {
+  border-radius: 25px;
+  overflow: hidden;
+  
+}
+#boxmodalbg {
+  background-color: none;
+}
+
+#boxmodalup {
+  height: 75px;
+  width: 100%;
+  background-color: rgba(21, 101, 192, 100);
+}
+
+#boxmodalbottom {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 15px;
+}
+
+#boxmodalbottomsave {
+  border-radius: 25px;
+}
+
+.loginform {
+ 
+  color: rgba(21, 101, 192, 100);
+}
+
+.loginformcontainer {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  background-color: aqua;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url("./images/sea.jpeg");
+  
+}
+
+.formborder {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 500px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 100px;
+  color:rgba(21, 101, 192, 100);
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 500px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 100px;
+  color:rgba(21, 101, 192, 100);
+}
+#logoutbutton {
+  float: right;
+  margin-right: 10px;
+}
+
+#uyeollink {
+  color: rgba(21, 80, 192, 100);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#boardsinfo {
+  margin-top: 50px;
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+  color:white;
+  border-radius: 25px;
+}
+
+#turnbacktowf {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: right;
+  
+}
+#turnbacktowfins {
+  margin-right: 10px;
+}
+
+#turnbacktowf:hover {
+  cursor: pointer;
+}
+
+#listboxcover {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+#listboxunder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 10px;
+  
+  width: 250px;
+  border-radius: 20px;
+}
+#listboxunderdelete {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+
+#bluebuttons {
+  color: white;
+  border-radius: 25px;
+  border-color: white;
+  
+}
+#cardmodalicons:hover {
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+  
+}
+
+#cardbasligi {
+  color:white;
+  border-color: white;
+  
+}
